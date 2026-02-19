@@ -80,12 +80,11 @@ button:hover{
     font-size:14px;
 }
 
-/* Hall ticket image box */
+/* hidden first */
 #hallImg{
     display:none;
     width:90%;
     margin:30px auto 0;
-    display:block;
     border:1px solid #ccc;
     border-radius:6px;
 }
@@ -108,7 +107,7 @@ button:hover{
 
         <div class="row">
             <label>Hall Ticket No / SSC Hall Ticket No</label>
-            <input type="text" placeholder="Enter Number">
+            <input type="text">
         </div>
 
         <div class="row">
@@ -116,13 +115,13 @@ button:hover{
             <input type="text" placeholder="DD-MM-YYYY">
         </div>
 
-        <button onclick="showResult()">Get Hall Ticket</button>
+        <button type="button" onclick="showResult()">Get Hall Ticket</button>
 
         <div style="clear:both"></div>
 
     </div>
 
-    <!-- Hall ticket demo image -->
+    <!-- demo image -->
     <img id="hallImg" src="hallticket-demo.jpg" alt="Hall Ticket Demo">
 
     <div class="footer">
