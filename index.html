@@ -69,11 +69,25 @@ button{
     cursor:pointer;
 }
 
+button:hover{
+    background:#0d8f6a;
+}
+
 .footer{
     text-align:center;
     margin-top:40px;
     color:#555;
     font-size:14px;
+}
+
+/* Hall ticket image box */
+#hallImg{
+    display:none;
+    width:90%;
+    margin:30px auto 0;
+    display:block;
+    border:1px solid #ccc;
+    border-radius:6px;
 }
 </style>
 </head>
@@ -108,6 +122,9 @@ button{
 
     </div>
 
+    <!-- Hall ticket demo image -->
+    <img id="hallImg" src="hallticket-demo.jpg" alt="Hall Ticket Demo">
+
     <div class="footer">
         Demo project created by Dhanush | Uploaded on GitHub
     </div>
@@ -116,7 +133,7 @@ button{
 
 <script>
 function showResult(){
-    alert("Demo only.\nNo real data is fetched.");
+    document.getElementById("hallImg").style.display = "block";
 }
 </script>
 
